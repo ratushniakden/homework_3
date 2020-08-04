@@ -97,7 +97,12 @@ else
 //Task 3
 /* let userInput = prompt("Enter value:")
 let discount = 0;
-if(userInput > 500 && userInput < 800)
+
+if(userInput > 0 && userInput <= 500)
+{
+    alert(`Purchase amount including discount is ${userInput - (userInput)*(discount/100)}`)
+}
+else if(userInput > 500 && userInput < 800)
 {
     discount = 3;
     alert(`Purchase amount including discount is ${userInput - (userInput)*(discount/100)}`)
